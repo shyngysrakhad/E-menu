@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edit_username"
+            android:hint="Ваше полное имя"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textSize="@dimen/standard_text" />
+
+        <EditText
+            android:id="@+id/editcomment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ваш отзыв"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textSize="@dimen/standard_text" />
+
+        <Button
+            android:id="@+id/buttoncomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отправить"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/standard_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

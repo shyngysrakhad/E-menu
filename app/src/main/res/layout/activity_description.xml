@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/dish_design"
+        android:layout_margin="@dimen/description_blank_margin"
+        android:layout_height="@dimen/description_blank_size">
+
+        <ImageView
+            android:id="@+id/fullphoto"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Here will be desctiontions"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="normal|bold"
+                android:textSize="@dimen/small_text" />
+
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="normal|bold"
+                android:textSize="@dimen/small_text" />
+
+            <TextView
+                android:id="@+id/txtrecommendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Загрузка..."
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="normal|bold"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonrecommend"
+        android:layout_width="match_parent"
+        android:text="Рекомендовать"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:textColor="@android:color/background_light"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="@dimen/standard_text" />
+
+    <Button
+        android:text="Оставить отзыв"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:textColor="@android:color/background_light"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentdialog"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="@dimen/standard_text" />
+
+    <TextView
+        android:text="Отзывы"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/small_text" />
+
+    <ListView
+        android:id="@+id/listcomments"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:divider="@android:color/holo_green_light"
+        android:dividerHeight="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <TextView
+        android:text="Никто ещё не оставил отзыв, станьте первым"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nocomment"
+        android:gravity="center" />
+
+</LinearLayout>

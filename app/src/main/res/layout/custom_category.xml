@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="7dp"
+    android:orientation="horizontal"
+    android:background="@drawable/dish_design">
+
+    <ImageView
+        android:id="@+id/photo_category"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/category_blank_size"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/layout_category"
+        android:layout_height="@dimen/category_blank_size">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_category"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="@dimen/standard_text" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dishcount"
+            android:fontFamily="serif"
+            android:textStyle="italic"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="@dimen/small_text" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/category_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="перейти"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
